@@ -1,0 +1,14 @@
+@import url("../portal-obrigacoes/portal-obrigacoes.css");
+
+.creditos-content {
+    padding: 24px;
+    display: grid;
+    gap: 24px;
+}
+
+@media (max-width: 640px) {
+    .creditos-content {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}

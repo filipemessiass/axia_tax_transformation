@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axia Energia | Inteligência Fiscal</title>
+    <link rel="stylesheet" href="portal-inteligencia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <a href="../dashboard-portal/dashboard-portal.html" class="brand-home" aria-label="Axia Energia">
+                    <img src="../assets/axia-energia.svg" alt="Logo Axia Energia">
+                    <div class="brand-copy">
+                        <strong>Axia Energia</strong>
+                        <span>Portal Tributário</span>
+                    </div>
+                </a>
+
+                <nav class="header-menu">
+                    <ul>
+                        <li>
+                            <a href="../dashboard-portal/dashboard-portal.html">
+                                <i class="fas fa-home"></i>
+                                Início
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-tributos/portal-tributos.html">
+                                <i class="fas fa-chart-line"></i>
+                                Gestão de Tributos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-obrigacoes/portal-obrigacoes.html">
+                                <i class="fas fa-calendar-check"></i>
+                                Obrigações Fiscais
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-indicadores/portal-indicadores.html">
+                                <i class="fas fa-chart-pie"></i>
+                                Indicadores Fiscais
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-certidoes/portal-certidoes.html">
+                                <i class="fas fa-certificate"></i>
+                                Portal de Certidões
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-compliance/portal-compliance.html">
+                                <i class="fas fa-shield-halved"></i>
+                                Compliance Fiscal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-creditos/portal-creditos.html">
+                                <i class="fas fa-coins"></i>
+                                Créditos Tributários
+                            </a>
+                        </li>
+                        <li>
+                            <span class="current">Inteligência Fiscal</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="user-area">
+                <div class="user-info">
+                    <i class="fas fa-user-circle"></i>
+                    <span id="username-display">Usuário</span>
+                </div>
+                <button class="logout-btn" onclick="logout()" title="Sair">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h1><i class="fas fa-robot"></i> Inteligência</h1>
+            <div class="sidebar-content">
+                <ul>
+                    <li><a href="#" onclick="mostrarSecao('visao'); return false;"><i class="fas fa-chart-column"></i> Visão Executiva</a></li>
+                    <li><a href="#" onclick="mostrarSecao('robos'); return false;"><i class="fas fa-robot"></i> Robôs Fiscais</a></li>
+                    <li><a href="#" onclick="mostrarSecao('inconsistencias'); return false;"><i class="fas fa-circle-exclamation"></i> Alertas de Inconsistência</a></li>
+                    <li><a href="#" onclick="mostrarSecao('leitura'); return false;"><i class="fas fa-file-lines"></i> Leitura SPED / ECF</a></li>
+                    <li><a href="#" onclick="mostrarSecao('legislacao'); return false;"><i class="fas fa-scale-balanced"></i> Monitoramento Legal</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="welcome-section">
+                <img class="welcome-logo" src="../assets/axia-energia.svg" alt="Logo Axia Energia">
+                <span class="section-tag">Axia Energia</span>
+                <h1>Inteligência Fiscal</h1>
+                <p>Escalone a governança tributária com automação, leitura assistida e alertas preditivos para ampliar qualidade e velocidade.</p>
+            </div>
+
+            <div id="inteligencia-content" class="obrigacoes-content inteligencia-content"></div>
+        </main>
+    </div>
+
+    <script>
+        window.onload = function() {
+            if (localStorage.getItem('loggedIn') !== 'true') {
+                window.location.href = '../portal/index.html';
+            }
+
+            document.getElementById('username-display').textContent =
+                localStorage.getItem('displayName') ||
+                localStorage.getItem('username') ||
+                'Usuário';
+
+            if (typeof inicializarPortalInteligencia === 'function') {
+                inicializarPortalInteligencia();
+            }
+        };
+
+        function logout() {
+            localStorage.removeItem('loggedIn');
+            localStorage.removeItem('username');
+            localStorage.removeItem('displayName');
+            window.location.href = '../portal/index.html';
+        }
+    </script>
+    <script src="script_portal-inteligencia.js"></script>
+</body>
+</html>

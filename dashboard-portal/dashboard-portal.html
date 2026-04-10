@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Axia Energia | Portal Tributário</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <a href="dashboard-portal.html" class="brand-home" aria-label="Axia Energia">
+                    <img src="../assets/axia-energia.svg" alt="Logo Axia Energia">
+                    <div class="brand-copy">
+                        <strong>Axia Energia</strong>
+                        <span>Portal Tributário</span>
+                    </div>
+                </a>
+
+                <nav class="header-menu">
+                    <ul>
+                        <li>
+                            <a href="../portal-tributos/portal-tributos.html">
+                                <i class="fas fa-chart-line"></i>
+                                Gestão de Tributos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-obrigacoes/portal-obrigacoes.html">
+                                <i class="fas fa-calendar-check"></i>
+                                Obrigações Fiscais
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-indicadores/portal-indicadores.html">
+                                <i class="fas fa-chart-pie"></i>
+                                Indicadores Fiscais
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-inteligencia/portal-inteligencia.html">
+                                <i class="fas fa-robot"></i>
+                                Inteligência Fiscal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-compliance/portal-compliance.html">
+                                <i class="fas fa-shield-halved"></i>
+                                Compliance Fiscal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-creditos/portal-creditos.html">
+                                <i class="fas fa-coins"></i>
+                                Créditos Tributários
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-certidoes/portal-certidoes.html">
+                                <i class="fas fa-certificate"></i>
+                                Portal de Certidões
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="user-area">
+                <div class="user-info">
+                    <i class="fas fa-user-circle"></i>
+                    <span id="username-display">Usuário</span>
+                </div>
+                <button class="logout-btn" onclick="logout()" title="Sair">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="welcome-section">
+            <span class="section-tag">Axia Energia</span>
+            <h1>Portal de Serviços Tributários</h1>
+            <p>Centralize consultas fiscais, normas e obrigações em uma experiência alinhada à identidade da companhia.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Gestão de Tributos</h3>
+                <p>Apuração, provisões e conciliação tributária em visão executiva.</p>
+                <a href="../portal-tributos/portal-tributos.html" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Obrigações Fiscais</h3>
+                <p>Controle de entregas, prazos e checklists regulatórios.</p>
+                <a href="../portal-obrigacoes/portal-obrigacoes.html" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Indicadores Fiscais</h3>
+                <p>Tax rate, créditos recuperados, riscos e fechamento em visão executiva.</p>
+                <a href="../portal-indicadores/portal-indicadores.html" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-robot"></i>
+                <h3>Inteligência Fiscal</h3>
+                <p>Automação, leitura assistida e monitoramento legal para ganho de escala.</p>
+                <a href="../portal-inteligencia/portal-inteligencia.html" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-halved"></i>
+                <h3>Compliance Fiscal</h3>
+                <p>Riscos, fiscalizações, contingências e divergências em visão executiva.</p>
+                <a href="../portal-compliance/portal-compliance.html" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-coins"></i>
+                <h3>Créditos Tributários</h3>
+                <p>Carteira, PER/DCOMP, oportunidades e histórico de recuperação.</p>
+                <a href="../portal-creditos/portal-creditos.html" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Reforma Tributária</h3>
+                <p>Acompanhamento das mudanças tributárias.</p>
+                <a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-gavel"></i>
+                <h3>Normas</h3>
+                <p>Consulta à legislação tributária.</p>
+                <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-landmark"></i>
+                <h3>CARF - Acórdãos VER</h3>
+                <p>Consulta aos acórdãos do projeto VER.</p>
+                <a href="https://acordaos.economia.gov.br/solr/acordaos2/browse/" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-balance-scale-right"></i>
+                <h3>CARF - Acórdãos</h3>
+                <p>Base de jurisprudência do CARF.</p>
+                <a href="http://idg.carf.fazenda.gov.br/jurisprudencia/acordaos-carf-2" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-newspaper"></i>
+                <h3>Diário Oficial</h3>
+                <p>Consulta ao Diário Oficial da União.</p>
+                <a href="https://www.in.gov.br/leiturajornal" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-id-card"></i>
+                <h3>Cartão CNPJ</h3>
+                <p>Consulta e emissão de cartão CNPJ.</p>
+                <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-search-dollar"></i>
+                <h3>SINTEGRA</h3>
+                <p>Consulta cadastral ao SINTEGRA.</p>
+                <a href="http://www.sintegra.gov.br/" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-desktop"></i>
+                <h3>Portal SPED</h3>
+                <p>Sistema Público de Escrituração Digital.</p>
+                <a href="http://sped.rfb.gov.br/" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Consulta CRC</h3>
+                <p>Verificação de registro profissional.</p>
+                <a href="https://www3.cfc.org.br/SPW/ConsultaNacionalCFC/cfc/consultaprofissional" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Consulta ECD</h3>
+                <p>Verificação de escrituração contábil.</p>
+                <a href="http://www.sped.fazenda.gov.br/appconsultasituacaocontabil/consultasituacao/cnpjano" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Agenda Tributária</h3>
+                <p>Calendário de obrigações fiscais.</p>
+                <a href="https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2025/janeiro" target="_blank" class="service-btn">Acessar</a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-file-signature"></i>
+                <h3>Simples Nacional</h3>
+                <p>Consulta ao Simples Nacional.</p>
+                <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/aplicacoes.aspx?id=21" target="_blank" class="service-btn">Acessar</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        window.onload = function () {
+            if (localStorage.getItem('loggedIn') !== 'true') {
+                window.location.href = '../portal/index.html';
+            }
+
+            document.getElementById('username-display').textContent =
+                localStorage.getItem('displayName') ||
+                localStorage.getItem('username') ||
+                'Usuário';
+        };
+
+        function logout() {
+            localStorage.removeItem('loggedIn');
+            localStorage.removeItem('username');
+            localStorage.removeItem('displayName');
+            window.location.href = '../portal/index.html';
+        }
+    </script>
+</body>
+</html>
