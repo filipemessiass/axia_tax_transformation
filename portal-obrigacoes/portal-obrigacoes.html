@@ -12,7 +12,7 @@
     <header class="header">
         <div class="top-bar">
             <div class="top-bar-left">
-                <a href="../dashboard-portal/dashboard-portal.html" class="brand-home" aria-label="Axia Energia">
+                <a href="../dashboard-portal/dashboard-portal.html" class="brand-home" aria-label="Início | Axia Energia" title="Início">
                     <img src="../assets/axia-energia.svg" alt="Logo Axia Energia">
                     <div class="brand-copy">
                         <strong>Axia Energia</strong>
@@ -23,22 +23,19 @@
                 <nav class="header-menu">
                     <ul>
                         <li>
-                            <a href="../dashboard-portal/dashboard-portal.html">
-                                <i class="fas fa-home"></i>
-                                Início
+                            <a href="../portal-certidoes/portal-certidoes.html">
+                                <i class="fas fa-certificate"></i>
+                                Portal de Certidões
                             </a>
                         </li>
                         <li>
-                            <a href="../portal-tributos/portal-tributos.html">
+                            <a href="../portal-tributos/gestao-tributos.html">
                                 <i class="fas fa-chart-line"></i>
                                 Gestão de Tributos
                             </a>
                         </li>
                         <li>
-                            <a href="../portal-certidoes/portal-certidoes.html">
-                                <i class="fas fa-certificate"></i>
-                                Portal de Certidões
-                            </a>
+                            <span class="current">Obrigações Fiscais</span>
                         </li>
                         <li>
                             <a href="../portal-indicadores/portal-indicadores.html">
@@ -63,9 +60,6 @@
                                 <i class="fas fa-coins"></i>
                                 Créditos Tributários
                             </a>
-                        </li>
-                        <li>
-                            <span class="current">Obrigações Fiscais</span>
                         </li>
                     </ul>
                 </nav>
@@ -99,7 +93,6 @@
 
         <main class="content">
             <div class="welcome-section">
-                <img class="welcome-logo" src="../assets/axia-energia.svg" alt="Logo Axia Energia">
                 <span class="section-tag">Axia Energia</span>
                 <h1>Obrigações Fiscais</h1>
                 <p>Gerencie entregas regulatórias, prazos e evidências com visão executiva para gerente e supervisor fiscal.</p>
@@ -112,7 +105,7 @@
     <script>
         window.onload = function() {
             if (localStorage.getItem('loggedIn') !== 'true') {
-                window.location.href = '../portal/index.html';
+                window.location.href = '../login.html';
             }
 
             document.getElementById('username-display').textContent =
@@ -129,7 +122,7 @@
             localStorage.removeItem('loggedIn');
             localStorage.removeItem('username');
             localStorage.removeItem('displayName');
-            window.location.href = '../portal/index.html';
+            window.location.href = '../login.html';
         }
     </script>
     <script src="script_portal-obrigacoes.js"></script>

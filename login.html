@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axia Energia | Acesso ao Portal Tributário</title>
+    <link rel="stylesheet" href="portal/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="logo">
+        <img src="assets/axia-energia.svg" alt="Logo Axia Energia" />
+      </div>
+
+      <div class="welcome-text">
+        <span class="brand-tag">Axia Energia</span>
+        <h1>Portal de Serviços Tributários</h1>
+        <p>Acesse a plataforma corporativa de consultoria tributária da companhia.</p>
+      </div>
+
+      <form id="loginForm" onsubmit="fazerLogin(); return false;">
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            id="username"
+            placeholder="Usuário"
+            required
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" placeholder="Senha" required />
+        </div>
+
+        <button type="submit" class="login-btn">
+          <i class="fas fa-sign-in-alt"></i>
+          <span>Entrar</span>
+        </button>
+      </form>
+
+      <div class="footer">
+        <p>© 2026 Axia Energia. Todos os direitos reservados.</p>
+      </div>
+    </div>
+
+    <script src="portal/js/login.js"></script>
+  </body>
+</html>

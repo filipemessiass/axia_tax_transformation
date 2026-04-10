@@ -12,7 +12,7 @@
     <header class="header">
         <div class="top-bar">
             <div class="top-bar-left">
-                <a href="dashboard-portal.html" class="brand-home" aria-label="Axia Energia">
+                <a href="dashboard-portal.html" class="brand-home" aria-label="Início | Axia Energia" title="Início">
                     <img src="../assets/axia-energia.svg" alt="Logo Axia Energia">
                     <div class="brand-copy">
                         <strong>Axia Energia</strong>
@@ -23,7 +23,13 @@
                 <nav class="header-menu">
                     <ul>
                         <li>
-                            <a href="../portal-tributos/portal-tributos.html">
+                            <a href="../portal-certidoes/portal-certidoes.html">
+                                <i class="fas fa-certificate"></i>
+                                Portal de Certidões
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../portal-tributos/gestao-tributos.html">
                                 <i class="fas fa-chart-line"></i>
                                 Gestão de Tributos
                             </a>
@@ -58,12 +64,6 @@
                                 Créditos Tributários
                             </a>
                         </li>
-                        <li>
-                            <a href="../portal-certidoes/portal-certidoes.html">
-                                <i class="fas fa-certificate"></i>
-                                Portal de Certidões
-                            </a>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -88,42 +88,6 @@
         </div>
 
         <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Gestão de Tributos</h3>
-                <p>Apuração, provisões e conciliação tributária em visão executiva.</p>
-                <a href="../portal-tributos/portal-tributos.html" class="service-btn">Acessar</a>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-calendar-check"></i>
-                <h3>Obrigações Fiscais</h3>
-                <p>Controle de entregas, prazos e checklists regulatórios.</p>
-                <a href="../portal-obrigacoes/portal-obrigacoes.html" class="service-btn">Acessar</a>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-chart-pie"></i>
-                <h3>Indicadores Fiscais</h3>
-                <p>Tax rate, créditos recuperados, riscos e fechamento em visão executiva.</p>
-                <a href="../portal-indicadores/portal-indicadores.html" class="service-btn">Acessar</a>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-robot"></i>
-                <h3>Inteligência Fiscal</h3>
-                <p>Automação, leitura assistida e monitoramento legal para ganho de escala.</p>
-                <a href="../portal-inteligencia/portal-inteligencia.html" class="service-btn">Acessar</a>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-shield-halved"></i>
-                <h3>Compliance Fiscal</h3>
-                <p>Riscos, fiscalizações, contingências e divergências em visão executiva.</p>
-                <a href="../portal-compliance/portal-compliance.html" class="service-btn">Acessar</a>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-coins"></i>
-                <h3>Créditos Tributários</h3>
-                <p>Carteira, PER/DCOMP, oportunidades e histórico de recuperação.</p>
-                <a href="../portal-creditos/portal-creditos.html" class="service-btn">Acessar</a>
-            </div>
             <div class="service-card">
                 <i class="fas fa-balance-scale"></i>
                 <h3>Reforma Tributária</h3>
@@ -202,7 +166,7 @@
     <script>
         window.onload = function () {
             if (localStorage.getItem('loggedIn') !== 'true') {
-                window.location.href = '../portal/index.html';
+                window.location.href = '../login.html';
             }
 
             document.getElementById('username-display').textContent =
@@ -215,7 +179,7 @@
             localStorage.removeItem('loggedIn');
             localStorage.removeItem('username');
             localStorage.removeItem('displayName');
-            window.location.href = '../portal/index.html';
+            window.location.href = '../login.html';
         }
     </script>
 </body>

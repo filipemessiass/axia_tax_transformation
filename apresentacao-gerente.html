@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axia Energia | Apresentação do Portal Tributário</title>
+    <style>
+        :root {
+            --axia-blue: #1a20ff;
+            --axia-blue-deep: #0f1673;
+            --axia-blue-soft: #eef0ff;
+            --axia-border: rgba(26, 32, 255, 0.14);
+            --axia-text: #1f2855;
+            --axia-muted: #66709a;
+            --axia-white: #ffffff;
+            --axia-bg: #f4f6ff;
+            --axia-shadow: 0 28px 60px rgba(15, 22, 115, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Poppins", "Segoe UI", sans-serif;
+            background:
+                radial-gradient(circle at top left, rgba(255, 255, 255, 0.55), transparent 34%),
+                linear-gradient(160deg, #f8f9ff 0%, #edf1ff 100%);
+            color: var(--axia-text);
+            padding: 32px 20px 48px;
+        }
+
+        .page {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--axia-blue) 0%, var(--axia-blue-deep) 100%);
+            color: var(--axia-white);
+            border-radius: 28px;
+            padding: 36px;
+            box-shadow: var(--axia-shadow);
+        }
+
+        .hero-tag {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.16);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.08;
+            margin-bottom: 14px;
+        }
+
+        .hero p {
+            max-width: 760px;
+            font-size: 1.04rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.88);
+        }
+
+        .access-card {
+            margin-top: 22px;
+            display: grid;
+            grid-template-columns: 1.15fr auto;
+            gap: 18px;
+            align-items: center;
+            padding: 20px 22px;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 0.14);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .access-card h2 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .access-card p {
+            font-size: 0.96rem;
+            line-height: 1.7;
+        }
+
+        .credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .credential-pill {
+            padding: 10px 14px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.92);
+            color: var(--axia-blue-deep);
+            font-size: 0.94rem;
+            font-weight: 700;
+        }
+
+        .primary-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 210px;
+            padding: 14px 20px;
+            border-radius: 16px;
+            background: var(--axia-white);
+            color: var(--axia-blue-deep);
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 18px 32px rgba(10, 15, 90, 0.18);
+        }
+
+        .content {
+            margin-top: 28px;
+            display: grid;
+            gap: 20px;
+        }
+
+        .section-card {
+            background: var(--axia-white);
+            border: 1px solid var(--axia-border);
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 16px 34px rgba(31, 40, 85, 0.06);
+        }
+
+        .section-card h3 {
+            margin-bottom: 12px;
+            font-size: 1.28rem;
+        }
+
+        .section-card p {
+            color: var(--axia-muted);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .section-card ul {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .section-card li {
+            padding: 14px 16px;
+            border-radius: 16px;
+            background: var(--axia-bg);
+            color: var(--axia-text);
+            line-height: 1.65;
+        }
+
+        .section-card strong {
+            color: var(--axia-blue-deep);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .footer-note {
+            margin-top: 10px;
+            font-size: 0.92rem;
+            color: var(--axia-muted);
+            text-align: center;
+        }
+
+        @media (max-width: 860px) {
+            .access-card,
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .primary-link {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 560px) {
+            body {
+                padding: 18px 14px 34px;
+            }
+
+            .hero,
+            .section-card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <section class="hero">
+            <span class="hero-tag">Axia Energia</span>
+            <h1>Apresentação do Portal de Serviços Tributários</h1>
+            <p>Esta demonstração apresenta uma proposta de portal corporativo para centralizar, organizar e dar visão executiva às principais demandas tributárias da Axia Energia em um único ambiente digital.</p>
+
+            <div class="access-card">
+                <div>
+                    <h2>Acesso à demonstração</h2>
+                    <p>Para visualizar o projeto, abra o arquivo <strong>login.html</strong> ou clique no botão ao lado. As credenciais de entrada são:</p>
+                    <div class="credentials">
+                        <span class="credential-pill">Login: Philippe Sá</span>
+                        <span class="credential-pill">Senha: 123</span>
+                    </div>
+                </div>
+                <a class="primary-link" href="login.html">Abrir login do sistema</a>
+            </div>
+        </section>
+
+        <div class="content">
+            <section class="section-card">
+                <h3>O que é este projeto</h3>
+                <p>Este projeto é uma simulação funcional de um <strong>Portal de Serviços Tributários</strong>, desenhado para mostrar como a Axia Energia pode concentrar em uma única plataforma suas rotinas fiscais, operacionais e gerenciais. A proposta é facilitar o acesso às informações, reduzir dispersão de controles e oferecer mais apoio à tomada de decisão da liderança.</p>
+            </section>
+
+            <section class="section-card">
+                <h3>Objetivo da proposta</h3>
+                <p>A ideia central é evoluir de controles espalhados para um ecossistema tributário mais organizado, visual e executivo, capaz de atender diferentes frentes da área fiscal com padrão único de navegação, consulta e acompanhamento. O portal foi pensado para apoiar tanto a operação diária quanto a visão gerencial da companhia.</p>
+            </section>
+
+            <div class="grid">
+                <section class="section-card">
+                    <h3>Frentes contempladas no portal</h3>
+                    <ul>
+                        <li><strong>Portal de Certidões:</strong> centralização de certidões e consultas necessárias para a operação tributária.</li>
+                        <li><strong>Gestão de Tributos:</strong> visão sobre apuração, provisões e conciliação tributária.</li>
+                        <li><strong>Obrigações Fiscais:</strong> controle de entregas, prazos e checklists regulatórios.</li>
+                        <li><strong>Indicadores Fiscais:</strong> leitura executiva de performance, riscos e eficiência da área.</li>
+                        <li><strong>Inteligência Fiscal:</strong> aplicação de automação, alertas e monitoramento normativo.</li>
+                        <li><strong>Compliance Fiscal e Créditos Tributários:</strong> acompanhamento de contingências, riscos e oportunidades financeiras.</li>
+                    </ul>
+                </section>
+
+                <section class="section-card">
+                    <h3>Benefícios esperados para a Axia Energia</h3>
+                    <ul>
+                        <li><strong>Centralização:</strong> acesso rápido a informações e serviços tributários em um só ambiente.</li>
+                        <li><strong>Governança:</strong> melhor organização de dados, prazos, obrigações e controles.</li>
+                        <li><strong>Redução de riscos:</strong> mais visibilidade sobre inconsistências, contingências e atrasos.</li>
+                        <li><strong>Eficiência operacional:</strong> menos retrabalho e mais agilidade no acompanhamento das rotinas fiscais.</li>
+                        <li><strong>Suporte à gestão:</strong> informação apresentada em formato mais aderente à visão de liderança.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="section-card">
+                <h3>Mensagem principal da proposta</h3>
+                <p>Mais do que uma tela de consulta, esta proposta demonstra como a Axia Energia pode estruturar um portal tributário interno com foco em <strong>eficiência, controle, inteligência e visão executiva</strong>. O objetivo é criar uma base digital que apoie a área tributária em suas demandas do dia a dia e, ao mesmo tempo, entregue valor gerencial para supervisão, coordenação e tomada de decisão.</p>
+            </section>
+
+            <p class="footer-note">Preparado por Filipe Messias - Especialista Tributário</p>
+        </div>
+    </div>
+</body>
+</html>
