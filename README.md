@@ -1,60 +1,87 @@
 # Portal de Serviços Tributários | Axia Energia
 
-## Acesso à demonstração
+## 🔐 Acesso à demonstração
 
 **Login:** `Philippe Sá`  
 **Senha:** `123`
 
-Para acessar o projeto localmente, abra o arquivo [`login.html`](./login.html).
+Para acessar localmente, abra o arquivo [`login.html`](./login.html).
 
-## Visão geral
+## 🧠 Visão Geral
 
-Este projeto apresenta uma proposta de **Portal de Serviços Tributários** para a **Axia Energia**, concebido para centralizar em um único ambiente digital as principais demandas fiscais, operacionais e gerenciais da companhia.
+Este projeto apresenta uma proposta de **Portal de Serviços Tributários Integrado**, desenvolvido como uma visão evolutiva para a área fiscal da **Axia Energia**.
 
-A demonstração foi estruturada para mostrar como a empresa pode evoluir de controles dispersos para uma experiência mais organizada, visual e executiva, oferecendo melhor apoio à operação tributária e à tomada de decisão da liderança.
+A iniciativa foi concebida com foco na estruturação de processos, centralização de informações e aumento de eficiência operacional, permitindo que a área tributária opere com maior controle, padronização e visibilidade gerencial.
 
-## Objetivo da proposta
+A demonstração simula a transição de um ambiente com controles descentralizados para um modelo mais organizado, orientado por dados e aderente às necessidades de gestão.
 
-A proposta busca consolidar serviços, consultas, indicadores e controles tributários em uma plataforma única, com navegação simples e linguagem alinhada ao contexto corporativo.
+## 🎯 Objetivo da Proposta
 
-O objetivo é criar uma base digital capaz de apoiar:
+A proposta busca consolidar, em um único ambiente digital, os principais fluxos e controles da área tributária, com foco em:
 
-- a rotina operacional da área tributária
-- o acompanhamento gerencial de riscos, obrigações e oportunidades
-- a padronização da consulta de informações críticas
-- a evolução da governança tributária da Axia Energia
+- Estruturação e padronização dos processos fiscais
+- Redução de riscos operacionais e inconsistências
+- Aumento da eficiência nas rotinas da área
+- Melhoria da visibilidade gerencial e suporte à tomada de decisão
+- Criação de base para evolução contínua (automação e analytics)
 
-## Módulos contemplados
+## ⚙️ Proposta de Valor
 
-O portal foi organizado para representar diferentes frentes da operação tributária:
+O portal foi desenhado para atuar como um hub central da operação tributária, conectando execução, controle e gestão em uma única camada.
 
-- **Portal de Certidões:** centralização de certidões e consultas necessárias para a operação fiscal.
-- **Gestão de Tributos:** visão sobre apuração, provisões e conciliação tributária.
-- **Obrigações Fiscais:** acompanhamento de entregas, prazos e checklists regulatórios.
-- **Indicadores Fiscais:** leitura executiva de performance, riscos e eficiência da área.
-- **Inteligência Fiscal:** automação, alertas e monitoramento normativo.
-- **Compliance Fiscal:** visão sobre contingências, divergências e histórico de fiscalização.
-- **Créditos Tributários:** controle de oportunidades, carteira e recuperação de créditos.
+Mais do que uma ferramenta de consulta, trata-se de uma proposta de organização da área fiscal orientada por processos, dados e eficiência operacional.
 
-## Benefícios esperados
+## 🧩 Módulos Contemplados
 
-Esta proposta foi pensada para demonstrar ganhos potenciais para a Axia Energia, como:
+A estrutura do portal representa as principais frentes da operação tributária:
 
-- **Centralização:** acesso rápido às principais frentes tributárias em um só ambiente.
-- **Governança:** mais organização sobre dados, prazos, obrigações e controles.
-- **Redução de riscos:** maior visibilidade sobre inconsistências, contingências e vencimentos.
-- **Eficiência operacional:** menos retrabalho e mais agilidade na rotina da área.
-- **Suporte à gestão:** apresentação das informações em formato mais aderente à visão de liderança.
+### 📁 Portal de Certidões
 
-## Como executar
+Centralização de certidões e consultas fiscais, com acesso rápido e padronizado.
+
+### 📊 Gestão de Tributos
+
+Visão consolidada de apuração, provisões e conciliação tributária, com foco em controle e consistência das informações.
+
+### 📅 Obrigações Fiscais
+
+Monitoramento de prazos, status de entregas e checklists operacionais, reduzindo riscos de atraso e inconsistência.
+
+### 📈 Indicadores Fiscais
+
+Dashboards executivos com foco em performance, riscos e eficiência da área.
+
+### 🤖 Inteligência Fiscal
+
+Simulação de automações, alertas e monitoramento de inconsistências e mudanças normativas.
+
+### 🔍 Compliance Fiscal
+
+Controle de contingências, histórico de fiscalizações e acompanhamento de riscos tributários.
+
+### ⚡ Créditos Tributários
+
+Gestão de oportunidades, controle de PER/DCOMP e acompanhamento de recuperação de créditos.
+
+## 🚀 Benefícios Esperados
+
+A proposta demonstra ganhos estruturais relevantes para a operação:
+
+- **Centralização:** acesso unificado às principais informações fiscais
+- **Padronização:** organização dos processos e redução de dependência operacional
+- **Redução de riscos:** maior controle sobre prazos, divergências e contingências
+- **Eficiência operacional:** diminuição de retrabalho e atividades manuais
+- **Visão gerencial:** suporte mais claro à tomada de decisão
+
+## 🛠️ Como Executar
 
 O projeto é estático e não depende de back-end.
 
-1. Baixe ou clone este repositório.
-2. Abra o arquivo [`login.html`](./login.html) no navegador.
-3. Entre com as credenciais informadas no topo deste documento.
+1. Baixe ou clone este repositório
+2. Abra o arquivo [`login.html`](./login.html) no navegador
+3. Utilize as credenciais informadas
 
-## Estrutura principal
+## 🗂️ Estrutura do Projeto
 
 ```text
 .
@@ -72,22 +99,16 @@ O projeto é estático e não depende de back-end.
 └── portal-creditos/
 ```
 
-## Documento complementar
+## 📊 Apresentação Executiva
 
-Além da demonstração, o projeto também inclui uma página de apresentação executiva para compartilhamento com a liderança:
+O projeto inclui uma versão voltada à liderança:
 
-- [`apresentacao-gerente.html`](./apresentacao-gerente.html)
+➡️ [`apresentacao-gerente.html`](./apresentacao-gerente.html)
 
-## Tecnologias utilizadas
+Conteúdo estruturado para demonstrar a proposta sob a ótica de gestão, eficiência e evolução da área.
+
+## 💻 Tecnologias Utilizadas
 
 - HTML
 - CSS
 - JavaScript
-
-## Mensagem principal da proposta
-
-Mais do que uma tela de consulta, este projeto demonstra como a Axia Energia pode estruturar um portal tributário interno com foco em **eficiência, controle, inteligência e visão executiva**, reunindo em um só ecossistema as demandas relevantes da área fiscal.
-
----
-
-**Preparado por Filipe Messias - Especialista Tributário**
